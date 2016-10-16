@@ -727,6 +727,7 @@ var Deck = (function () {
 	var $el = _card4.$el;
 	_card4.Elevens = function (i, len, cb) {
 	$("#" + _card4.$el.id).show();
+	_card4.$el.style.cursor = 'move';
 	if (i < counttableaucards) {
 		_card4.setSide('front');
 		cardxpos = cardposition[i][0];

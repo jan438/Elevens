@@ -480,7 +480,7 @@ div#countcards9 {
 	position: absolute;
 	transition: .5s ease;
 	display: inline-block;
-	left: -450px;
+	left: -350px;
 	top: 250px;
 	width: 104px;
 	height: 144px;
@@ -531,6 +531,6 @@ h4#swalgoedgedaan {
 	font-weight: bold;
 	transition: .5s ease;
 	display: inline-block;
-	left: -400px;
+	left: -350px;
 	top: 0px;
 }

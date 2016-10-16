@@ -108,29 +108,31 @@ function checkcards(cards) {
 }
 function decktotableau(cards) {
 	for (var i = 0; i < cards.length; i++) {
-		for (var j = 0; j < counttableaucards; j++) {
-			if (cards[i].x === cardposition[j][0] && cards[i].y === cardposition[j][1] && deckcards.length > 0) {
-				deckcards[0].$el.style.zIndex = maxZ++;
-				deckcards[0].setSide('front');
-				rotation = 5 - Math.random() * 10;
-				deckcards[0].animateTo({
-					delay: 1000,
-					duration: 250,
-					x: cards[i].x,
-					y: cards[i].y,
-					rot: rotation,
-					onStart: function onStart() {
-					},
-					onComplete: function onComplete() {
-					}
-				});
-//				console.log("Decktotableau: " + cardtosymbols(cards[i]) + " " + cardtosymbols(deckcards[0]) + " " + j + " " + deckcards.length);
-				tableaucards[j].push(deckcards[0]);
-				$("#countcards"+j).html(tableaucards[j].length);
-				deckcards.splice(0,1);
-				if (deckcards.length === 0) gamescore = gamescore + bonus42;
-				$("#countcards").html("Cards:" + deckcards.length);
-				break;
+		if (deckcards.length > 0) {
+			for (var j = 0; j < counttableaucards; j++) {
+				if (cards[i].x === cardposition[j][0] && cards[i].y === cardposition[j][1]) {
+					deckcards[0].$el.style.zIndex = maxZ++;
+					deckcards[0].setSide('front');
+					rotation = 5 - Math.random() * 10;
+					deckcards[0].animateTo({
+						delay: 1000,
+						duration: 250,
+						x: cards[i].x,
+						y: cards[i].y,
+						rot: rotation,
+						onStart: function onStart() {
+						},
+						onComplete: function onComplete() {
+						}
+					});
+//					console.log("Decktotableau: " + cardtosymbols(cards[i]) + " " + cardtosymbols(deckcards[0]) + " " + j + " " + deckcards.length);
+					tableaucards[j].push(deckcards[0]);
+					$("#countcards"+j).html(tableaucards[j].length);
+					deckcards.splice(0,1);
+					if (deckcards.length === 0) gamescore = gamescore + bonus42;
+					$("#countcards").html("Cards:" + deckcards.length);
+					break;
+				}
 			}
 		}
 	}
@@ -434,6 +436,7 @@ var Deck = (function () {
 			$("#" + selectedcards[i].$el.id).removeClass('selected');
 		}
 		if (deckcards.length > 0) decktotableau(selectedcards);
+		else
 		if (deckcards.length === 0) {
 			for (var i = 0; i < selectedcards.length; i++) {
 				$("#" + selectedcards[i].$el.id).hide();

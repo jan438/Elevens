@@ -439,11 +439,22 @@ var Deck = (function () {
 		else
 		if (deckcards.length === 0) {
 			for (var i = 0; i < selectedcards.length; i++) {
-				$("#" + selectedcards[i].$el.id).hide();
 				for (var j = 0; j < counttableaucards; j++) {
 					if (selectedcards[i].x === cardposition[j][0] && selectedcards[i].y === cardposition[j][1]) {
 						tableaucards[j].splice(-1,1);
 						$("#countcards"+j).html(tableaucards[j].length);
+						selectedcards[i].setSide('back');
+						selectedcards[i].animateTo({
+							delay: 1000,
+							duration: 250,
+							x: 300,
+							y: 0,
+							rot: rotation,
+							onStart: function onStart() {
+							},
+							onComplete: function onComplete() {
+							}
+						});
 					}
 				}
 			}

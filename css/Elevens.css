@@ -476,7 +476,7 @@ div#countcards9 {
 	left: 100px;
 	top: 200px;
 }
-#Elevens {
+button#Elevens {
 	position: absolute;
 	transition: .5s ease;
 	display: inline-block;
@@ -485,6 +485,11 @@ div#countcards9 {
 	width: 104px;
 	height: 144px;
 	background-image: url('../Elevens.png');
+}
+button#Elevens:active {
+  background-color: #3366cc;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 table#score {
    margin-top: 10px;

@@ -487,6 +487,8 @@ button#Elevens {
 	background-image: url('../Elevens.png');
 	border-radius: 15px;
 	box-shadow: 0 9px #999;
+	outline: 0;
+	border: 0;
 }
 button#Elevens:active {
   background-color: #3366cc;

@@ -543,3 +543,6 @@ h4#swalgoedgedaan {
 	left: -350px;
 	top: 0px;
 }
+button::-moz-focus-inner {
+  border: 0;
+}

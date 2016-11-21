@@ -635,12 +635,11 @@ var Deck = (function () {
 				}
 			}
 			_deck2.cards.forEach(function (card, i) {
-//				console.log(i + ":" + cardtosymbols(card));
 				if (i === 51) {
 					next();
 				}
 			});
-		};
+		}
 	}
   };
   function plusminus(value) {

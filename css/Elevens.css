@@ -480,8 +480,8 @@ button#Elevens {
 	position: absolute;
 	transition: .5s ease;
 	display: inline-block;
-	left: -350px;
-	top: 150px;
+	left: 20px;
+	top: -400px;
 	width: 104px;
 	height: 144px;
 	background-image: url('../Elevens.png');
@@ -529,8 +529,8 @@ h4#swalgoedgedaan {
 	position: absolute;
 	transition: .5s ease;
 	display: inline-block;
-	left: -335px;
-	top: -100px;
+	left: -100px;
+	top: -400px;
 	width: 67px;
 	height: 67px;
 }
@@ -540,8 +540,8 @@ h4#swalgoedgedaan {
 	font-weight: bold;
 	transition: .5s ease;
 	display: inline-block;
-	left: -350px;
-	top: 0px;
+	left: -115px;
+	top: -325px;
 }
 button::-moz-focus-inner {
   border: 0;

@@ -480,7 +480,7 @@ button#Elevens {
 	position: absolute;
 	transition: .5s ease;
 	display: inline-block;
-	left: 20px;
+	left: 90px;
 	top: -340px;
 	width: 52px;
 	height: 72px;
@@ -529,7 +529,7 @@ h4#swalgoedgedaan {
 	position: absolute;
 	transition: .5s ease;
 	display: inline-block;
-	left: -100px;
+	left: -150px;
 	top: -340px;
 	width: 67px;
 	height: 67px;
@@ -540,7 +540,7 @@ h4#swalgoedgedaan {
 	font-weight: bold;
 	transition: .5s ease;
 	display: inline-block;
-	left: -115px;
+	left: -165px;
 	top: -265px;
 }
 button::-moz-focus-inner {

@@ -481,7 +481,7 @@ button#Elevens {
 	transition: .5s ease;
 	display: inline-block;
 	left: 20px;
-	top: -400px;
+	top: -340px;
 	width: 52px;
 	height: 72px;
 	background-image: url('../Elevens.png');
@@ -530,7 +530,7 @@ h4#swalgoedgedaan {
 	transition: .5s ease;
 	display: inline-block;
 	left: -100px;
-	top: -400px;
+	top: -340px;
 	width: 67px;
 	height: 67px;
 }
@@ -541,7 +541,7 @@ h4#swalgoedgedaan {
 	transition: .5s ease;
 	display: inline-block;
 	left: -115px;
-	top: -325px;
+	top: -265px;
 }
 button::-moz-focus-inner {
   border: 0;

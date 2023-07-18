@@ -1,5 +1,5 @@
 'use strict';
-const deckx = -300;
+const deckx = 0;
 const elevenachieved = 0;
 const elevencannotbeachieved = -2;
 const facesachieved = 1;
@@ -688,14 +688,14 @@ var Deck = (function () {
           delay: delay,
           duration: 200,
           x: deckx + plusminus(Math.random() * 40 + 20) * ____fontSize / 16,
-          y: -300 -z,
+          y: -295 -z,
           rot: 0
         });
 	_card3.animateTo({
 		delay: 200 + delay,
 		duration: 200,
 		x: deckx -z,
-		y: -300 -z,
+		y: -295 -z,
 		rot: 0,
 		onStart: function onStart() {
 		$el.style.zIndex = i;

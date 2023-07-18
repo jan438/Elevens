@@ -447,8 +447,8 @@ var Deck = (function () {
 						selectedcards[i].animateTo({
 							delay: 1000,
 							duration: 250,
-							x: 300,
-							y: 0,
+							x: 0,
+							y: -295,
 							rot: rotation,
 							onStart: function onStart() {
 							},

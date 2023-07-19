@@ -444,7 +444,9 @@ var Deck = (function () {
 						tableaucards[j].splice(-1,1);
 						$("#countcards"+j).html(tableaucards[j].length);
 						selectedcards[i].setSide('back');
-						var achievedcount = tableaucards[0].length;
+						var achievedcount = tableaucards[0].length + tableaucards[1].length + tableaucards[2].length +
+						tableaucards[3].length + tableaucards[4].length + tableaucards[5].length + tableaucards[6].length +
+						tableaucards[7].length + tableaucards[8].length + tableaucards[9].length;
 						$("#countcards").html("Cards:" + (52 - achievedcount));
 						selectedcards[i].animateTo({
 							delay: 1000,
